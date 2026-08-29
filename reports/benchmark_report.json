@@ -1,0 +1,1250 @@
+{
+  "total": 138,
+  "correct": 107,
+  "accuracy": 0.7754,
+  "cases": [
+    {
+      "attribute": "category",
+      "raw": "Kurti - Ladies",
+      "expected": "kurta",
+      "got": "kurta",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "kurtha",
+      "expected": "kurta",
+      "got": "kurta",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "STRAIGHT KURTA",
+      "expected": "kurta",
+      "got": "kurta",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "anarkali kurta",
+      "expected": "kurta",
+      "got": "kurta",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "kurta top",
+      "expected": "kurta",
+      "got": "kurta",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "ladies kurti",
+      "expected": "kurta",
+      "got": "kurta",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "sarees",
+      "expected": "saree",
+      "got": "saree",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "sari",
+      "expected": "saree",
+      "got": "saree",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "seree",
+      "expected": "saree",
+      "got": "saree",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "silk saree",
+      "expected": "saree",
+      "got": "saree",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "lehnga choli",
+      "expected": "lehenga",
+      "got": "lehenga",
+      "confidence": 0.96,
+      "source": "difflib",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "ghagra",
+      "expected": "lehenga",
+      "got": "lehenga",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "chaniya choli",
+      "expected": "lehenga",
+      "got": "lehenga",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "lehanga",
+      "expected": "lehenga",
+      "got": "lehenga",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "punjabi suit",
+      "expected": "salwar_suit",
+      "got": "salwar_suit",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "salwar kameez",
+      "expected": "salwar_suit",
+      "got": "salwar_suit",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "churidar suit",
+      "expected": "salwar_suit",
+      "got": "salwar_suit",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "suit set",
+      "expected": "salwar_suit",
+      "got": "salwar_suit",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "duppata",
+      "expected": "dupatta",
+      "got": "dupatta",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "chunni",
+      "expected": "dupatta",
+      "got": "dupatta",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "odhni",
+      "expected": "dupatta",
+      "got": "dupatta",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "mens sherwani",
+      "expected": "sherwani",
+      "got": "sherwani",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "shervani",
+      "expected": "sherwani",
+      "got": "sherwani",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "modi jacket",
+      "expected": "nehru_jacket",
+      "got": "nehru_jacket",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "nehru coat",
+      "expected": "nehru_jacket",
+      "got": "nehru_jacket",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "koti",
+      "expected": "nehru_jacket",
+      "got": "nehru_jacket",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "plazo",
+      "expected": "palazzo",
+      "got": "palazzo",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "palazzo pants",
+      "expected": "palazzo",
+      "got": "palazzo",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "blowse",
+      "expected": "blouse",
+      "got": "blouse",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "choli",
+      "expected": "blouse",
+      "got": "blouse",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "shawl",
+      "expected": "stole",
+      "got": "stole",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "scarf",
+      "expected": "stole",
+      "got": "stole",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "ethnic wear top",
+      "expected": "kurta",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "category",
+      "raw": "ladies long top ethnic",
+      "expected": "kurta",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "category",
+      "raw": "festive drape",
+      "expected": "saree",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "category",
+      "raw": "nine yard traditional wear",
+      "expected": "saree",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "category",
+      "raw": "bottom wear flared",
+      "expected": "palazzo",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "category",
+      "raw": "wide leg ethnic trouser",
+      "expected": "palazzo",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "category",
+      "raw": "gents ethnic long coat",
+      "expected": "sherwani",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "category",
+      "raw": "groom wear full length",
+      "expected": "sherwani",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "category",
+      "raw": "two piece ladies set",
+      "expected": "salwar_suit",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "category",
+      "raw": "bridal skirt set",
+      "expected": "lehenga",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "category",
+      "raw": "shoulder cloth",
+      "expected": "dupatta",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "category",
+      "raw": "waistcoat ethnic sleeveless",
+      "expected": "nehru_jacket",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "category",
+      "raw": "fitted short top for drape",
+      "expected": "blouse",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "category",
+      "raw": "neck wrap winter",
+      "expected": "stole",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "category",
+      "raw": "assorted festive items",
+      "expected": "unknown",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "gift card",
+      "expected": "unknown",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "clearance lot 42",
+      "expected": "unknown",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": true
+    },
+    {
+      "attribute": "category",
+      "raw": "misc",
+      "expected": "unknown",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "navy",
+      "expected": "blue",
+      "got": "blue",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "royal",
+      "expected": "blue",
+      "got": "blue",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "teal",
+      "expected": "blue",
+      "got": "blue",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "indigo",
+      "expected": "blue",
+      "got": "blue",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "sky",
+      "expected": "blue",
+      "got": "blue",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "maroon",
+      "expected": "red",
+      "got": "red",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "rust",
+      "expected": "red",
+      "got": "red",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "wine",
+      "expected": "red",
+      "got": "red",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "crimson",
+      "expected": "red",
+      "got": "red",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "cherry",
+      "expected": "red",
+      "got": "red",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "olive",
+      "expected": "green",
+      "got": "green",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "bottle",
+      "expected": "green",
+      "got": "green",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "emerald",
+      "expected": "green",
+      "got": "green",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "mint",
+      "expected": "green",
+      "got": "green",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "mustard",
+      "expected": "yellow",
+      "got": "yellow",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "lemon",
+      "expected": "yellow",
+      "got": "yellow",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "gold",
+      "expected": "yellow",
+      "got": "yellow",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "ochre",
+      "expected": "yellow",
+      "got": "yellow",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "fuchsia",
+      "expected": "pink",
+      "got": "pink",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "rose",
+      "expected": "pink",
+      "got": "pink",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "blush",
+      "expected": "pink",
+      "got": "pink",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "lavender",
+      "expected": "purple",
+      "got": "purple",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "mauve",
+      "expected": "purple",
+      "got": "purple",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "plum",
+      "expected": "purple",
+      "got": "purple",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "charcoal",
+      "expected": "black",
+      "got": "black",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "jet",
+      "expected": "black",
+      "got": "black",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "ivory",
+      "expected": "white",
+      "got": "white",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "off white",
+      "expected": "white",
+      "got": "white",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "cream",
+      "expected": "white",
+      "got": "white",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "beige",
+      "expected": "brown",
+      "got": "brown",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "camel",
+      "expected": "brown",
+      "got": "brown",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "coffee",
+      "expected": "brown",
+      "got": "brown",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "saffron",
+      "expected": "orange",
+      "got": "orange",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "coral",
+      "expected": "orange",
+      "got": "orange",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "slate",
+      "expected": "grey",
+      "got": "grey",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "silver",
+      "expected": "grey",
+      "got": "grey",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "Navy Blu",
+      "expected": "blue",
+      "got": "blue",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "Maroom",
+      "expected": "red",
+      "got": "red",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "gray",
+      "expected": "grey",
+      "got": "grey",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "offwhite",
+      "expected": "white",
+      "got": "white",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "nevy",
+      "expected": "blue",
+      "got": "blue",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "wht",
+      "expected": "white",
+      "got": "white",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "peacock",
+      "expected": "blue",
+      "got": "pink",
+      "confidence": 0.6666666666666666,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "color",
+      "raw": "sea green",
+      "expected": "green",
+      "got": "green",
+      "confidence": 0.7142857142857143,
+      "source": "difflib",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "dusty rose",
+      "expected": "pink",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "color",
+      "raw": "midnight",
+      "expected": "blue",
+      "got": "green",
+      "confidence": 0.6666666666666666,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "color",
+      "raw": "burnt sienna",
+      "expected": "brown",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "color",
+      "raw": "aubergine",
+      "expected": "purple",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "color",
+      "raw": "gunmetal",
+      "expected": "grey",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "color",
+      "raw": "champagne",
+      "expected": "yellow",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "color",
+      "raw": "brick",
+      "expected": "red",
+      "got": "black",
+      "confidence": 0.6,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "color",
+      "raw": "forest",
+      "expected": "green",
+      "got": "red",
+      "confidence": 0.6,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "color",
+      "raw": "powder blue",
+      "expected": "blue",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "color",
+      "raw": "jet black shimmer",
+      "expected": "black",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "color",
+      "raw": "multicolour",
+      "expected": "unknown",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "assorted",
+      "expected": "unknown",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": true
+    },
+    {
+      "attribute": "color",
+      "raw": "as per image",
+      "expected": "unknown",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": true
+    },
+    {
+      "attribute": "material",
+      "raw": "Cotton Blend",
+      "expected": "cotton",
+      "got": "cotton",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "material",
+      "raw": "pure cotton",
+      "expected": "cotton",
+      "got": "cotton",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "material",
+      "raw": "cotton 100%",
+      "expected": "cotton",
+      "got": "cotton",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "material",
+      "raw": "handloom cotton",
+      "expected": "cotton",
+      "got": "cotton",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "material",
+      "raw": "cottn",
+      "expected": "cotton",
+      "got": "cotton",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "material",
+      "raw": "kora cotton",
+      "expected": "cotton",
+      "got": "cotton",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "material",
+      "raw": "Raw Silk",
+      "expected": "silk",
+      "got": "silk",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "material",
+      "raw": "art silk",
+      "expected": "silk",
+      "got": "silk",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "material",
+      "raw": "Banarasi Silk",
+      "expected": "silk",
+      "got": "silk",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "material",
+      "raw": "silk blend",
+      "expected": "silk",
+      "got": "silk",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "material",
+      "raw": "tussar",
+      "expected": "silk",
+      "got": "silk",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "material",
+      "raw": "Georgett",
+      "expected": "georgette",
+      "got": "georgette",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "material",
+      "raw": "faux georgette",
+      "expected": "georgette",
+      "got": "georgette",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "material",
+      "raw": "viscose",
+      "expected": "rayon",
+      "got": "rayon",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "material",
+      "raw": "viscose rayon",
+      "expected": "rayon",
+      "got": "rayon",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "material",
+      "raw": "poly blend",
+      "expected": "polyester",
+      "got": "polyester",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "material",
+      "raw": "polyster",
+      "expected": "polyester",
+      "got": "polyester",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "material",
+      "raw": "Linen Blend",
+      "expected": "linen",
+      "got": "linen",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "material",
+      "raw": "pure linen",
+      "expected": "linen",
+      "got": "linen",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "material",
+      "raw": "velvet",
+      "expected": "velvet",
+      "got": "velvet",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "material",
+      "raw": "wool",
+      "expected": "wool",
+      "got": "wool",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "material",
+      "raw": "denim",
+      "expected": "denim",
+      "got": "denim",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "material",
+      "raw": "chiffon",
+      "expected": "chiffon",
+      "got": "chiffon",
+      "confidence": 1.0,
+      "source": "exact",
+      "correct": true
+    },
+    {
+      "attribute": "material",
+      "raw": "chanderi",
+      "expected": "cotton",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "material",
+      "raw": "brocade",
+      "expected": "silk",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "material",
+      "raw": "khadi",
+      "expected": "cotton",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "material",
+      "raw": "crepe",
+      "expected": "polyester",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "material",
+      "raw": "organza",
+      "expected": "silk",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "material",
+      "raw": "net fabric",
+      "expected": "polyester",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": false
+    },
+    {
+      "attribute": "material",
+      "raw": "mixed fabric",
+      "expected": "unknown",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": true
+    },
+    {
+      "attribute": "material",
+      "raw": "see description",
+      "expected": "unknown",
+      "got": "unknown",
+      "confidence": 0.0,
+      "source": "difflib",
+      "correct": true
+    }
+  ],
+  "llm": null
+}

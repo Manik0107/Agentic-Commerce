@@ -1,0 +1,50 @@
+{
+  "entries": [
+    {
+      "id": 3,
+      "ts": "2026-08-29T09:28:52+00:00",
+      "token_id": "tok_demo_001",
+      "agent_id": "agent_shopper_01",
+      "merchant_id": "m_kalaghar",
+      "product_id": "p002",
+      "sku": "SKU-p002-F",
+      "protocol_used": "AP2",
+      "gate_decision": "blocked",
+      "reason": "category_not_allowed",
+      "razorpay_order_id": null,
+      "amount": 4499.0
+    },
+    {
+      "id": 2,
+      "ts": "2026-08-29T09:28:52+00:00",
+      "token_id": "tok_demo_001",
+      "agent_id": "agent_shopper_01",
+      "merchant_id": "m_kalaghar",
+      "product_id": "p016",
+      "sku": "SKU-p016-M",
+      "protocol_used": "AP2",
+      "gate_decision": "blocked",
+      "reason": "spend_cap_exceeded",
+      "razorpay_order_id": null,
+      "amount": 1399.0
+    },
+    {
+      "id": 1,
+      "ts": "2026-08-29T09:28:52+00:00",
+      "token_id": "tok_demo_001",
+      "agent_id": "agent_shopper_01",
+      "merchant_id": "m_kalaghar",
+      "product_id": "p001",
+      "sku": "SKU-p001-S",
+      "protocol_used": "AP2",
+      "gate_decision": "completed",
+      "reason": null,
+      "razorpay_order_id": "order_TVXIlhxm1MltWW",
+      "amount": 1249.0
+    }
+  ],
+  "count": 3,
+  "allowed": 1,
+  "blocked": 2,
+  "errors": 0
+}
