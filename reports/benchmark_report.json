@@ -1247,9 +1247,9 @@
     }
   ],
   "llm": {
-    "requests": 3,
-    "input_tokens": 962,
-    "output_tokens": 1176,
+    "requests": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
     "live_keys": 2,
     "dropped_keys": [],
     "exhausted_models": [],
