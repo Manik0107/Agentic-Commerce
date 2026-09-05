@@ -1,5 +1,5 @@
 MERCHANT_ID = "m_kalaghar"
-MERCHANT_NAME = "Kalaghar Ethnics"
+MERCHANT_NAME = "Agentic Commerce"
 
 # (product_id, name, raw_category, raw_color, raw_material,
 #  [(sku, size, price_rupees, stock)])

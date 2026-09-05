@@ -9,7 +9,7 @@ const WALLETS = {
   tok_other_merchant: "Aarav's wallet for another store",
 };
 let minted = 0;
-const STORES = { m_kalaghar: "Kalaghar" };
+const STORES = { m_kalaghar: "Agentic Commerce" };
 const WHY = {
   spend_cap_exceeded:       "That would go over your spending limit",
   category_not_allowed:     "You never approved this kind of item",
