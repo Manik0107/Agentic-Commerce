@@ -1,7 +1,7 @@
 {
   "total": 138,
-  "correct": 107,
-  "accuracy": 0.7754,
+  "correct": 132,
+  "accuracy": 0.9565,
   "cases": [
     {
       "attribute": "category",
@@ -98,8 +98,8 @@
       "raw": "lehnga choli",
       "expected": "lehenga",
       "got": "lehenga",
-      "confidence": 0.96,
-      "source": "difflib",
+      "confidence": 1.0,
+      "source": "gemini",
       "correct": true
     },
     {
@@ -295,135 +295,135 @@
       "attribute": "category",
       "raw": "ethnic wear top",
       "expected": "kurta",
-      "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
-      "correct": false
+      "got": "kurta",
+      "confidence": 0.7,
+      "source": "gemini",
+      "correct": true
     },
     {
       "attribute": "category",
       "raw": "ladies long top ethnic",
       "expected": "kurta",
-      "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
-      "correct": false
+      "got": "kurta",
+      "confidence": 0.9,
+      "source": "gemini",
+      "correct": true
     },
     {
       "attribute": "category",
       "raw": "festive drape",
       "expected": "saree",
-      "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
-      "correct": false
+      "got": "saree",
+      "confidence": 0.6,
+      "source": "gemini",
+      "correct": true
     },
     {
       "attribute": "category",
       "raw": "nine yard traditional wear",
       "expected": "saree",
-      "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
-      "correct": false
+      "got": "saree",
+      "confidence": 0.95,
+      "source": "gemini",
+      "correct": true
     },
     {
       "attribute": "category",
       "raw": "bottom wear flared",
       "expected": "palazzo",
-      "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
-      "correct": false
+      "got": "palazzo",
+      "confidence": 0.8,
+      "source": "gemini",
+      "correct": true
     },
     {
       "attribute": "category",
       "raw": "wide leg ethnic trouser",
       "expected": "palazzo",
-      "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
-      "correct": false
+      "got": "palazzo",
+      "confidence": 0.95,
+      "source": "gemini",
+      "correct": true
     },
     {
       "attribute": "category",
       "raw": "gents ethnic long coat",
       "expected": "sherwani",
-      "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
-      "correct": false
+      "got": "sherwani",
+      "confidence": 0.9,
+      "source": "gemini",
+      "correct": true
     },
     {
       "attribute": "category",
       "raw": "groom wear full length",
       "expected": "sherwani",
-      "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
-      "correct": false
+      "got": "sherwani",
+      "confidence": 0.85,
+      "source": "gemini",
+      "correct": true
     },
     {
       "attribute": "category",
       "raw": "two piece ladies set",
       "expected": "salwar_suit",
-      "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
-      "correct": false
+      "got": "salwar_suit",
+      "confidence": 0.7,
+      "source": "gemini",
+      "correct": true
     },
     {
       "attribute": "category",
       "raw": "bridal skirt set",
       "expected": "lehenga",
-      "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
-      "correct": false
+      "got": "lehenga",
+      "confidence": 0.95,
+      "source": "gemini",
+      "correct": true
     },
     {
       "attribute": "category",
       "raw": "shoulder cloth",
       "expected": "dupatta",
-      "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
-      "correct": false
+      "got": "dupatta",
+      "confidence": 0.8,
+      "source": "gemini",
+      "correct": true
     },
     {
       "attribute": "category",
       "raw": "waistcoat ethnic sleeveless",
       "expected": "nehru_jacket",
-      "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
-      "correct": false
+      "got": "nehru_jacket",
+      "confidence": 0.9,
+      "source": "gemini",
+      "correct": true
     },
     {
       "attribute": "category",
       "raw": "fitted short top for drape",
       "expected": "blouse",
-      "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
-      "correct": false
+      "got": "blouse",
+      "confidence": 0.9,
+      "source": "gemini",
+      "correct": true
     },
     {
       "attribute": "category",
       "raw": "neck wrap winter",
       "expected": "stole",
-      "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
-      "correct": false
+      "got": "stole",
+      "confidence": 0.85,
+      "source": "gemini",
+      "correct": true
     },
     {
       "attribute": "category",
       "raw": "assorted festive items",
       "expected": "unknown",
       "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
+      "confidence": 1.0,
+      "source": "gemini",
       "correct": true
     },
     {
@@ -431,8 +431,8 @@
       "raw": "gift card",
       "expected": "unknown",
       "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
+      "confidence": 1.0,
+      "source": "gemini",
       "correct": true
     },
     {
@@ -440,8 +440,8 @@
       "raw": "clearance lot 42",
       "expected": "unknown",
       "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
+      "confidence": 1.0,
+      "source": "gemini",
       "correct": true
     },
     {
@@ -449,8 +449,8 @@
       "raw": "misc",
       "expected": "unknown",
       "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
+      "confidence": 1.0,
+      "source": "gemini",
       "correct": true
     },
     {
@@ -835,117 +835,117 @@
       "attribute": "color",
       "raw": "peacock",
       "expected": "blue",
-      "got": "pink",
-      "confidence": 0.6666666666666666,
-      "source": "difflib",
-      "correct": false
+      "got": "blue",
+      "confidence": 0.7,
+      "source": "gemini",
+      "correct": true
     },
     {
       "attribute": "color",
       "raw": "sea green",
       "expected": "green",
       "got": "green",
-      "confidence": 0.7142857142857143,
-      "source": "difflib",
+      "confidence": 0.95,
+      "source": "gemini",
       "correct": true
     },
     {
       "attribute": "color",
       "raw": "dusty rose",
       "expected": "pink",
-      "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
-      "correct": false
+      "got": "pink",
+      "confidence": 0.95,
+      "source": "gemini",
+      "correct": true
     },
     {
       "attribute": "color",
       "raw": "midnight",
       "expected": "blue",
-      "got": "green",
-      "confidence": 0.6666666666666666,
-      "source": "difflib",
-      "correct": false
+      "got": "blue",
+      "confidence": 0.8,
+      "source": "gemini",
+      "correct": true
     },
     {
       "attribute": "color",
       "raw": "burnt sienna",
       "expected": "brown",
-      "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
-      "correct": false
+      "got": "brown",
+      "confidence": 0.9,
+      "source": "gemini",
+      "correct": true
     },
     {
       "attribute": "color",
       "raw": "aubergine",
       "expected": "purple",
-      "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
-      "correct": false
+      "got": "purple",
+      "confidence": 0.9,
+      "source": "gemini",
+      "correct": true
     },
     {
       "attribute": "color",
       "raw": "gunmetal",
       "expected": "grey",
-      "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
-      "correct": false
+      "got": "grey",
+      "confidence": 0.9,
+      "source": "gemini",
+      "correct": true
     },
     {
       "attribute": "color",
       "raw": "champagne",
       "expected": "yellow",
-      "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
-      "correct": false
+      "got": "yellow",
+      "confidence": 0.7,
+      "source": "gemini",
+      "correct": true
     },
     {
       "attribute": "color",
       "raw": "brick",
       "expected": "red",
-      "got": "black",
-      "confidence": 0.6,
-      "source": "difflib",
-      "correct": false
+      "got": "red",
+      "confidence": 0.9,
+      "source": "gemini",
+      "correct": true
     },
     {
       "attribute": "color",
       "raw": "forest",
       "expected": "green",
-      "got": "red",
-      "confidence": 0.6,
-      "source": "difflib",
-      "correct": false
+      "got": "green",
+      "confidence": 0.9,
+      "source": "gemini",
+      "correct": true
     },
     {
       "attribute": "color",
       "raw": "powder blue",
       "expected": "blue",
-      "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
-      "correct": false
+      "got": "blue",
+      "confidence": 0.95,
+      "source": "gemini",
+      "correct": true
     },
     {
       "attribute": "color",
       "raw": "jet black shimmer",
       "expected": "black",
-      "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
-      "correct": false
+      "got": "black",
+      "confidence": 0.95,
+      "source": "gemini",
+      "correct": true
     },
     {
       "attribute": "color",
       "raw": "multicolour",
       "expected": "unknown",
       "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
+      "confidence": 0.9,
+      "source": "gemini",
       "correct": true
     },
     {
@@ -953,8 +953,8 @@
       "raw": "assorted",
       "expected": "unknown",
       "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
+      "confidence": 0.9,
+      "source": "gemini",
       "correct": true
     },
     {
@@ -962,8 +962,8 @@
       "raw": "as per image",
       "expected": "unknown",
       "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
+      "confidence": 0.9,
+      "source": "gemini",
       "correct": true
     },
     {
@@ -1178,8 +1178,8 @@
       "raw": "chanderi",
       "expected": "cotton",
       "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
+      "confidence": 0.9,
+      "source": "gemini",
       "correct": false
     },
     {
@@ -1187,8 +1187,8 @@
       "raw": "brocade",
       "expected": "silk",
       "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
+      "confidence": 0.9,
+      "source": "gemini",
       "correct": false
     },
     {
@@ -1196,8 +1196,8 @@
       "raw": "khadi",
       "expected": "cotton",
       "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
+      "confidence": 0.9,
+      "source": "gemini",
       "correct": false
     },
     {
@@ -1205,8 +1205,8 @@
       "raw": "crepe",
       "expected": "polyester",
       "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
+      "confidence": 0.9,
+      "source": "gemini",
       "correct": false
     },
     {
@@ -1214,8 +1214,8 @@
       "raw": "organza",
       "expected": "silk",
       "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
+      "confidence": 0.9,
+      "source": "gemini",
       "correct": false
     },
     {
@@ -1223,8 +1223,8 @@
       "raw": "net fabric",
       "expected": "polyester",
       "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
+      "confidence": 0.9,
+      "source": "gemini",
       "correct": false
     },
     {
@@ -1232,8 +1232,8 @@
       "raw": "mixed fabric",
       "expected": "unknown",
       "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
+      "confidence": 0.9,
+      "source": "gemini",
       "correct": true
     },
     {
@@ -1241,10 +1241,18 @@
       "raw": "see description",
       "expected": "unknown",
       "got": "unknown",
-      "confidence": 0.0,
-      "source": "difflib",
+      "confidence": 0.9,
+      "source": "gemini",
       "correct": true
     }
   ],
-  "llm": null
+  "llm": {
+    "requests": 3,
+    "input_tokens": 962,
+    "output_tokens": 1176,
+    "live_keys": 2,
+    "dropped_keys": [],
+    "exhausted_models": [],
+    "cost_usd": 0.0
+  }
 }

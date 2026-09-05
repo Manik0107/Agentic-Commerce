@@ -1,0 +1,127 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalaghar — a store an AI can buy from</title>
+<link rel="agent-catalog" href="/.well-known/agent-catalog.json">
+<link rel="stylesheet" href="/ui/style.css?v={v}">
+
+<nav>
+  <div class="nav-in">
+    <span class="brand">Kala<span>ghar</span></span>
+    <span class="sub">agentic commerce infrastructure</span>
+    <span class="spacer"></span>
+    <a class="cta" href="/demo">See it work</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <div class="hero">
+    <div class="eyebrow">Razorpay AI Buildathon · Track 1</div>
+    <h1>A store an <em>AI</em> can buy from.</h1>
+    <p class="lede">An AI shopping agent cannot read a merchant's catalog, does not speak
+      their protocol, and has nothing stopping it from overspending. This removes all
+      three — and the merchant adds one line to a page they already serve.</p>
+    <div class="chips">
+      <span class="chip">Zero backend changes</span>
+      <span class="chip"><b>AP2</b> end to end</span>
+      <span class="chip">Razorpay <b>test mode</b></span>
+      <span class="chip">Every attempt <b>audited</b></span>
+    </div>
+  </div>
+
+  <section>
+    <div class="kicker">Three walls, three components</div>
+    <div class="walls">
+      <div class="wall">
+        <div class="no">01 · CATALOG LAYER</div>
+        <h3>Agents cannot read merchant catalogs</h3>
+        <p>The merchant's own feed says <code>Kurti - Ladies</code>,
+          <code>Navy Blu</code>, <code>cottn</code>.</p>
+        <p class="fix">Four tiers — cache, synonym, Gemini, difflib — map it to a
+          canonical taxonomy, each seeing only what the tier above could not answer.
+          Hierarchical, so <code>Navy Blu</code> keeps both <b>blue</b> and
+          <b>navy</b>. Every value scored. Discovery is one link tag.</p>
+      </div>
+      <div class="wall">
+        <div class="no">02 · PROTOCOL ADAPTER</div>
+        <h3>Agents speak different protocols</h3>
+        <p>AP2, ACP and x402 each say "I want to buy this" differently.</p>
+        <p class="fix">One translator turns any dialect into a single internal Order
+          Intent, and the answer back. <b>AP2 both ways</b>; ACP and x402 declared, and
+          they raise rather than pass half a message on. A refusal returns as a protocol
+          decline, never a transport error.</p>
+      </div>
+      <div class="wall">
+        <div class="no">03 · PAYMENT GATE</div>
+        <h3>An agent that can pay can overspend</h3>
+        <p>Nothing in the protocol bounds what an agent does with payment authority.</p>
+        <p class="fix">It holds a token the user scoped: <b>spend cap</b>,
+          <b>merchant</b>, <b>category</b>, <b>expiry</b>. The gate checks all four in
+          that order, and any failure blocks with no partial charge. Money is integer
+          paise end to end.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="kicker">What the gate guarantees</div>
+    <div class="guarantees">
+      <div class="g"><div class="mark">01</div><div>
+        <h4>A blocked attempt cannot charge</h4>
+        <p>Not "does not" — cannot. Every refusal returns before control reaches the
+          processor call, so no ordering bug or later edit can charge a refused intent.</p></div></div>
+      <div class="g"><div class="mark">02</div><div>
+        <h4>Two agents cannot both fit one cap</h4>
+        <p>Check and reserve happen inside one <code>BEGIN IMMEDIATE</code> transaction.
+          The tests race two threads at one cap and exactly one gets through.</p></div></div>
+      <div class="g"><div class="mark">03</div><div>
+        <h4>Every attempt is audited, crashes included</h4>
+        <p>The audit write sits in a <code>finally</code>. A trail of only the paths that
+          went well proves nothing about whether anyone was protected.</p></div></div>
+    </div>
+    <p class="built">Built: catalog layer · AP2 translator both directions · the gate and
+      its audit trail · Razorpay test-mode orders, verified against Razorpay rather than
+      against our own log.</p>
+  </section>
+
+  <section>
+    <div class="kicker">How it works</div>
+    <div class="flow">
+      <div class="stage">
+        <b>1 · Read</b>
+        <p>The messy feed becomes a canonical catalog an agent can query. Same query,
+          same rows, every time.</p>
+      </div>
+      <div class="arrow">→</div>
+      <div class="stage">
+        <b>2 · Ask</b>
+        <p>The agent's AP2 mandate becomes one internal order intent. Live price and
+          stock are re-checked, never the agent's claim.</p>
+      </div>
+      <div class="arrow">→</div>
+      <div class="stage">
+        <b>3 · Gate</b>
+        <p>Expiry, merchant, category, cap. Then a Razorpay order or a structured
+          refusal — and an audit row either way.</p>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="v">95.7%</div><div class="k">normalisation, 138 labelled cases</div></div>
+      <div class="stat"><div class="v">100%</div><div class="k">category and colour</div></div>
+      <div class="stat"><div class="v">3</div><div class="k">Gemini calls per full sync</div></div>
+      <div class="stat"><div class="v">$0.00</div><div class="k">cost, free tier</div></div>
+    </div>
+    <p class="built">Every remaining miss is one taxonomy gap — it has a fibre axis and no
+      weave axis, so the model correctly declines to call <code>chanderi</code> a fibre.
+      The taxonomy is wrong there, not the model.</p>
+  </section>
+
+  <section class="closer">
+    <h2>See the gate refuse a purchase</h2>
+    <p class="say">A real catalog, a real AP2 exchange, real Razorpay test-mode orders,
+      and an audit trail that records the refusals as carefully as the payments.</p>
+    <a class="cta big" href="/demo">Open the live demo</a>
+  </section>
+
+</div>

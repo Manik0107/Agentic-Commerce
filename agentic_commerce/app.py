@@ -1,9 +1,11 @@
 import datetime as dt
 from contextlib import asynccontextmanager
+from pathlib import Path
 
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import HTMLResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 load_dotenv()
@@ -35,21 +37,35 @@ app = FastAPI(
 # ── Component A: catalog ──────────────────────────────────────────────────────
 
 
+UI_DIR = Path(__file__).parent.parent / "ui"
+app.mount("/ui", StaticFiles(directory=UI_DIR), name="ui")
+
+
+def _page(name: str) -> HTMLResponse:
+    """A UI page, read per request, with its assets stamped by mtime.
+
+    StaticFiles sends no Cache-Control, so a browser is free to serve a stale script
+    from cache without revalidating. The stamp changes whenever the file does, which
+    is the difference between demoing the current code and demoing last hour's.
+    """
+    stamp = int(max((UI_DIR / f).stat().st_mtime for f in ("style.css", "app.js")))
+    html = (UI_DIR / name).read_text().replace("{v}", str(stamp))
+    return HTMLResponse(html, headers={"cache-control": "no-store"})
+
+
 @app.get("/", response_class=HTMLResponse, include_in_schema=False)
 def storefront():
     """The merchant's existing page, plus one line (PRD 6.6).
 
     The link tag is the entire integration surface for discovery.
     """
-    return f"""<!doctype html>
-<meta charset="utf-8">
-<title>{mock_merchant.MERCHANT_NAME}</title>
-<link rel="agent-catalog" href="/.well-known/agent-catalog.json">
-<h1>{mock_merchant.MERCHANT_NAME}</h1>
-<p>Handloom and festive ethnic wear.</p>
-<p>This page is readable by AI agents: the link tag above points at a machine-readable
-catalog, and the order intent endpoint it advertises accepts AP2 purchase intents.</p>
-"""
+    return _page("index.html")
+
+
+@app.get("/demo", response_class=HTMLResponse, include_in_schema=False)
+def demo_page():
+    """The live walk-through of the same endpoints an agent would call."""
+    return _page("demo.html")
 
 
 @app.get("/.well-known/agent-catalog.json")

@@ -1,0 +1,99 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalaghar — live demo</title>
+<link rel="stylesheet" href="/ui/style.css?v={v}">
+
+<nav>
+  <div class="nav-in">
+    <a class="brand" href="/" style="text-decoration:none;color:inherit">Kala<span>ghar</span></a>
+    <span class="sub">live demo</span>
+    <span class="spacer"></span>
+    <a class="back" href="/">← What this is</a>
+    <a class="back" href="/docs">API</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <section class="demo-open">
+    <div class="kicker">Live</div>
+    <h2>Try it yourself</h2>
+    <p class="say">This is the real service, not a mock. Buy something inside the limits,
+      then try to break one — go over the spending limit, or buy a category you never
+      approved. Both refusals are real, and both land in the audit trail below.</p>
+  </section>
+
+  <div class="tagline">
+    <code>&lt;link rel="agent-catalog" href="/.well-known/agent-catalog.json"&gt;</code>
+    <span>one line, no backend change</span>
+    <span class="spacer"></span>
+    <span class="m" id="health" style="color:var(--n6);font-size:13px">connecting…</span>
+    <button onclick="runSync()" id="syncBtn">Refresh products</button>
+  </div>
+
+  <section class="card">
+    <h3 class="card-title">Your spending limits</h3>
+    <div class="row">
+      <select id="tokenPick" onchange="loadToken()"></select>
+      <button onclick="issueToken()">New wallet</button>
+      <label>limit ₹<input type="number" id="newCap" value="1500" min="1" step="100"
+             onchange="setLimit()" title="changes the limit on the wallet on screen"></label>
+      <span class="note">the limit applies live — the gate re-checks it on the next purchase</span>
+    </div>
+    <div class="headline" id="tokenHead"></div>
+    <div class="bar" id="bar"><div style="width:0"></div></div>
+    <div class="facts" id="tokenOut"></div>
+  </section>
+
+  <section class="card">
+    <h3 class="card-title">Shop</h3>
+    <p class="hint">Deterministic filters, no model in this path. Each product shows
+      <span class="m" style="color:var(--amb)">merchant vocabulary</span> →
+      <span class="m">canonical</span>, flagged where confidence falls under 0.90.</p>
+    <div class="row">
+      <select id="fCategory" onchange="onFilter()"><option value="">Everything</option></select>
+      <select id="fColor" onchange="onFilter()"><option value="">Any colour</option></select>
+      <label>max ₹<input type="number" id="fMax" value="1500" onchange="onFilter()"></label>
+      <label><input type="checkbox" id="fStock" checked onchange="onFilter()"> in stock</label>
+      <button onclick="runQuery()">Query</button>
+      <span class="spacer"></span>
+      <select id="protocol" title="the protocol the buying agent speaks">
+        <option value="AP2">shopper speaks AP2</option>
+        <option value="ACP">shopper speaks ACP</option>
+        <option value="x402">shopper speaks x402</option>
+      </select>
+    </div>
+    <div class="url" id="queryUrl"></div>
+    <div id="products"></div>
+  </section>
+
+  <section class="card" id="wireCard" hidden>
+    <h3 class="card-title">Checkout</h3>
+    <div id="decision"></div>
+    <details>
+      <summary>What the shopper and the store actually sent each other</summary>
+      <div class="wire">
+        <div><h3>shopper → store</h3><pre id="wireReq"></pre></div>
+        <div><h3>store → shopper</h3><pre id="wireRes"></pre></div>
+      </div>
+    </details>
+  </section>
+
+  <section class="card">
+    <h3 class="card-title">Audit trail</h3>
+    <p class="hint">Every purchase this shopper attempted — the ones that went through
+      and the ones the spending limits stopped. A refusal is recorded as carefully as a
+      payment, which is the only way to show the limits actually protected anyone.
+      Each row is what the limits were <b>at that moment</b>; raising a limit later
+      never rewrites a past decision.</p>
+    <label class="scope-toggle">
+      <input type="checkbox" id="auditAll" onchange="loadAudit()"> show every wallet
+    </label>
+    <div class="tallies" id="auditSum"></div>
+    <div id="auditOut"></div>
+  </section>
+
+</div>
+
+<script src="/ui/app.js?v={v}"></script>
